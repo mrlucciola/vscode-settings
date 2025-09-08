@@ -1,0 +1,360 @@
+{
+  /////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////// LANGUAGE SETTINGS /////////////////////////////
+  "[csharp]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode",
+    "editor.tabSize": 4,
+    "editor.indentSize": 4,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.semanticHighlighting.enabled": "configuredByTheme"
+  },
+  "csharp.debug.logging.moduleLoad": false,
+  "csharp.debug.console": "integratedTerminal",
+  "csharp.format.enable": true,
+  "csharp.experimental.debug.hotReload": true,
+  "dotnetAcquisitionExtension.existingDotnetPath": ["/usr/local/share/dotnet/dotnet"],
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker",
+    "editor.tabSize": 4
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "editor.tabSize": 4
+  },
+  "[gitignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[npmignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.tabSize": 2
+  },
+  "html.format.maxPreserveNewLines": 1,
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ini]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 3
+  },
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
+  "markdown-mermaid.languages": ["mermaid"],
+  "markdown.preview.scrollPreviewWithEditor": false,
+  "markdown.preview.scrollEditorWithPreview": false,
+  "markdown.updateLinksOnFileMove.enabled": "never",
+  "[mermaid]": {
+    "editor.tabSize": 4
+  },
+  "[plaintext]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.tabSize": 4
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 4
+  },
+  "python.formatting.provider": "black",
+  "jupyter.askForKernelRestart": false,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.tabSize": 4
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "editor.tabSize": 2
+  },
+  "shellformat.path": "/Users/matthias/go/bin/shfmt",
+  "[snippets]": {
+    // "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[solidity]": {
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity",
+    "editor.tabSize": 4
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
+    "editor.tabSize": 4
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "npm-intellisense.importQuotes": "\"",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  ///////////////////////////// LANGUAGE SETTINGS /////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////// EDITOR ///////////////////////////////////
+  // Editor: Diff Editor
+  "diffEditor.ignoreTrimWhitespace": false,
+  // Editor: Editor
+  "editor.accessibilitySupport": "off",
+  "editor.autoClosingBrackets": "beforeWhitespace",
+  "editor.autoClosingDelete": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 14,
+  "editor.glyphMargin": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.inlineSuggest.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.minimap.maxColumn": 40,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.size": "fit",
+  "editor.stickyScroll.enabled": true,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.wordWrapColumn": 100,
+  // Editor: Files
+  "files.associations": {
+    "*.rest": "http",
+    "*.yaml-tmLanguage": "yaml",
+    "*.mmd": "mermaid",
+    "*.mermaid": "mermaid",
+    ".gitignore": "ignore",
+    ".npmignore": "ignore",
+    "pre-push": "shellscript",
+    "prepare-commit-msg": "shellscript",
+    "commit-msg": "shellscript",
+    "pre-commit": "shellscript",
+    "post-commit": "shellscript",
+    "applypatch-msg": "shellscript",
+    "pre-applypatch": "shellscript",
+    "post-applypatch": "shellscript",
+    "pre-rebase": "shellscript",
+    "post-rewrite": "shellscript",
+    "post-checkout": "shellscript",
+    "post-merge": "shellscript",
+    "pre-merge-commit": "shellscript",
+    "pre-receive": "shellscript",
+    "post-receive": "shellscript",
+    "proc-receive": "shellscript",
+    "sendemail-validate": "shellscript",
+    "update": "shellscript",
+    "post-update": "shellscript",
+    "pre-auto-gc": "shellscript",
+    "push-to-checkout": "shellscript",
+    "reference-transaction": "shellscript",
+    "fsmonitor-watchman": "shellscript",
+    "*.zsh": "shellscript",
+    "*.sh": "shellscript",
+    "*.bash": "shellscript"
+  },
+  // Editor: Search
+  "search.exclude": {
+    "**/*tsconfig.tsbuildinfo": true,
+    "**/dist": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/node_modules": true,
+    "**/bun.lockb": true,
+    "**/*.cpy": true,
+    "**/*.pyc": true
+  },
+  // Editor: Window
+  "window.commandCenter": false,
+  "window.zoomLevel": -1,
+  "window.autoDetectColorScheme": true,
+  // performance
+  "keyboard.touchbar.enabled": false,
+  "terminal.integrated.gpuAcceleration": "on",
+  // Editor Layout: General
+  "workbench.activityBar.location": "top",
+  "workbench.layoutControl.enabled": false,
+  // Editor Layout: Gutter
+  "scm.diffDecorationsGutterWidth": 5,
+  "scm.showIncomingChanges": "never",
+  "scm.showOutgoingChanges": "never",
+  ////////////////////////////////// EDITOR ///////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////// GIT ////////////////////////////////////
+  "git.alwaysSignOff": true,
+  "git.enableCommitSigning": true,
+  "git.openRepositoryInParentFolders": "always",
+  "git.optimisticUpdate": false,
+  "git.suggestSmartCommit": false,
+  // "Gitlens" Extendsion
+  "gitlens.views.branches.branches.layout": "list",
+  "gitlens.views.commits.pullRequests.enabled": false,
+  "gitlens.views.formats.stashes.description": "${stashOnRef, } ${message} - ${authorDate} - ${tips}",
+  "gitlens.views.formats.stashes.label": "${message} ${authorDate}",
+  "gitlens.views.scm.grouped.views": {
+    "commits": false,
+    "branches": false,
+    "remotes": false,
+    "stashes": false,
+    "tags": false,
+    "worktrees": false,
+    "contributors": false,
+    "repositories": false,
+    "searchAndCompare": false,
+    "launchpad": false
+  },
+  //////////////////////////////////// GIT ////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////// GITHUB ///////////////////////////////////
+  // "GitHub CoPilot" Extension
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.advanced": {},
+  // "GitHub Pull-Requests" Extension
+  "githubPullRequests.defaultMergeMethod": "squash",
+  "githubPullRequests.showPullRequestNumberInTree": true,
+  "githubPullRequests.pullBranch": "never",
+  "githubPullRequests.remotes": ["origin"],
+  "githubPullRequests.assignCreated": "${user}",
+  "githubPullRequests.pushBranch": "always",
+  "githubPullRequests.quickDiff": true,
+  // "GitHub Issues" Extension
+  "githubIssues.queries": [
+    {
+      "label": "My Issues",
+      "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+    },
+    {
+      "label": "Recent Issues",
+      "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+    }
+  ],
+  "githubIssues.createInsertFormat": "url",
+  "githubIssues.issueBranchTitle": "${issueNumber}-${sanitizedIssueTitle}",
+  "githubIssues.createIssueTriggers": ["TODO", "todo", "BUG", "FIXME", "ISSUE", "@todo"],
+  ////////////////////////////////// GITHUB ///////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////// DOCKER/KUBERNETES /////////////////////////////
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path-mac": "/Users/matthias/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vscode-kubernetes.minikube-path-mac": "/Users/matthias/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+  },
+  ///////////////////////////// DOCKER/KUBERNETES /////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////// TELEMETRY /////////////////////////////////
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+  "extensions.webWorker": false,
+  "gitlens.telemetry.enabled": false,
+  "hardhat.telemetry": false,
+  "javascript.suggestionActions.enabled": false,
+  "php.suggest.basic": false,
+  "redhat.telemetry.enabled": false,
+  "rest-client.enableTelemetry": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "solidity.telemetry": false,
+  "telemetry.telemetryLevel": "off",
+  "typescript.suggestionActions.enabled": false,
+  "typescript.surveys.enabled": false,
+  "workbench.enableExperiments": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  ///////////////////////////////// TELEMETRY /////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////// EVM ////////////////////////////////////
+  //////////////////////////////////// EVM ////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////// VIM/NEOVIM /////////////////////////////////
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  ///////////////////////////////// VIM/NEOVIM /////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////
+  // bookmarks/highlights
+  "todohighlight.include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.md",
+    "**/*.rs",
+    "**/*.mmd",
+    "**/*.mermaid",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.json",
+    "**/*.py",
+    "**/*.ipynb"
+  ],
+  "inline-bookmarks.default.words.red": "@fix[\\s],@delete[\\s]",
+  "inline-bookmarks.default.words.blue": "@note[\\s]",
+  "inline-bookmarks.default.words.purple": "@todo[\\s]",
+  "inline-bookmarks.default.words.green": "",
+  "inline-bookmarks.search.excludes": [
+    "**/node_modules/**",
+    "**/dist",
+    "**/build/**",
+    "**/out/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map",
+    "**/bower_components/**",
+    "**/.next/**",
+    "**/.git/**",
+    "**/.github/**",
+    "**/.vscode/**",
+    "**/.vscode-test/**"
+  ],
+  "prettier.printWidth": 100,
+  "prettier.htmlWhitespaceSensitivity": "strict",
+
+  "shfmt.executablePath": "/Users/matthias/go/bin/shfmt",
+  "python.experiments.enabled": false,
+  "python.experiments.optInto": [],
+  "notebook.defaultFormatter": "ms-python.black-formatter"
+}
