@@ -1,0 +1,139 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "shift+alt+4",
+    "command": "issue.startWorkingBranchDescriptiveTitle"
+  },
+  {
+    "key": "shift+alt+2",
+    "command": "issue.createIssue"
+  },
+  {
+    "key": "shift+alt+3",
+    "command": "pr.pushAndCreate"
+  },
+  {
+    "key": "shift+alt+z",
+    "command": "issues:github.focus"
+  },
+  {
+    "key": "shift+alt+1",
+    "command": "issue.createIssueFromSelection"
+  },
+  {
+    "key": "shift+alt+w",
+    "command": "git.checkout"
+  },
+  {
+    "key": "shift+alt+e",
+    "command": "git.fetch"
+  },
+  {
+    "key": "shift+alt+c",
+    "command": "issue.statusBar"
+  },
+  {
+    "key": "shift+alt+x",
+    "command": "pr.refreshChanges"
+  },
+  {
+    "key": "shift+alt+x",
+    "command": "issue.refresh"
+  },
+  {
+    "key": "shift+alt+m",
+    "command": "pr.merge"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "editor.action.selectToBracket"
+  },
+  {
+    "key": "shift+cmd+/",
+    "command": "editor.action.goToImplementation",
+    "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "cmd+l",
+    "command": "search.action.cancel",
+    "when": " searchViewletVisible && !inputFocus"
+  },
+  {
+    "key": "cmd+l",
+    "command": "search.action.cancel",
+    "when": "listFocus && searchViewletVisible && !inputFocus && searchState != '0'"
+  },
+  {
+    "key": "cmd+l",
+    "command": "closeReferenceSearch",
+    "when": "inReferenceSearchEditor && !config.editor.stablePeek"
+  },
+  {
+    "key": "cmd+l",
+    "command": "closeReferenceSearch",
+    "when": "referenceSearchVisible && !config.editor.stablePeek"
+  },
+  {
+    "key": "cmd+l",
+    "command": "search.action.cancel",
+    "when": "listFocus && searchViewletVisible && !inputFocus && searchState != '0'"
+  },
+  {
+    "key": "cmd+l",
+    "command": "removeSecondaryCursors",
+    "when": "editorHasMultipleSelections && textInputFocus"
+  },
+  {
+    "key": "cmd+l",
+    "command": "closeFindWidget",
+    "when": "editorFocus && findWidgetVisible && !isComposing"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "workbench.action.debug.stepOver",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "f10",
+    "command": "-workbench.action.debug.stepOver",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "shift+cmd+0",
+    "command": "editor.debug.action.toggleBreakpoint",
+    "when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
+  },
+  {
+    "key": "shift+alt+cmd+=",
+    "command": "workbench.action.debug.stepInto",
+    "when": "debugState != 'inactive'"
+  },
+  {
+    "key": "shift+alt+cmd+-",
+    "command": "workbench.action.debug.stepOut",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "-workbench.view.debug",
+    "when": "viewContainer.workbench.view.debug.enabled"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "cmd+k cmd+h",
+    "command": "gitlens.views.fileHistory.focus"
+  }
+]

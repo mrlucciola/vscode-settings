@@ -1,0 +1,141 @@
+// snippet-generator.app
+{
+  "Todo": {
+    "prefix": "todo",
+    "body": [
+      "// @todo ${1:$TM_SELECTED_TEXT}$0",
+    ],
+    "description": "Todo"
+  },
+  "React Router Parent-route Component": {
+    "prefix": "rrp",
+    "body": [
+      "// react",
+      "import { Route, Outlet } from \"react-router-dom\";",
+      "// style",
+      "import { Container, useTheme } from \"@mui/material\";",
+      "// components",
+      "// import XYZ from \"./XYZ\";",
+      "",
+      "/** $8 */",
+      "const $1Router: React.FC = () => {",
+      "  return (",
+      "    <Route path=\"/\" element={<ViewLayout />}>",
+      "      {/* <Route index element={<XYZ />} /> */}",
+      "      <Route path=\"*\" element={<NotFound />} />",
+      "    </Route>",
+      "  );",
+      "};",
+      "",
+      "export default $1Router;",
+      "",
+      "/** Top-level display settings for all nested routes */",
+      "function ViewLayout() {",
+      "  const theme = useTheme();",
+      "",
+      "  return (",
+      "    <Container",
+      "      sx={{",
+      "        flex: 1,",
+      "        overflow: \"scroll\",",
+      "        alignItems: \"center\",",
+      "        display: \"flex\",",
+      "        flexFlow: \"column\",",
+      "        \"& > div\": {",
+      "          height: \"100%\",",
+      "          minHeight: \"100%\",",
+      "          width: \"100%\",",
+      "          maxWidth: { xs: \"100%\", lg: theme.breakpoints.values.lg },",
+      "        },",
+      "        background: \"grey\",",
+      "      }}",
+      "    >",
+      "      <Outlet />",
+      "    </Container>",
+      "  );",
+      "}",
+      "",
+      "/** Simple view for unmatched route path patterns */",
+      "function NotFound() {",
+      "  return <Container className=\"not-found\">Error: Route Not Found</Container>;",
+      "}"
+    ],
+    "description": "React Router Parent-route Component"
+  },
+  // log snippets (in typescript.json)
+  "Basic Interpolated Console Log": {
+    "prefix": "llog",
+    "body": [
+      "console.log(`$1`);",
+      "$0"
+    ],
+    "description": "Basic Interpolated Console Log"
+  },
+  "Var. Interpolated Console Log": {
+    "prefix": "lkvlog",
+    "body": [
+      "console.log(`$1${${2:$TM_SELECTED_TEXT}}`);",
+      "$0"
+    ],
+    "description": "Var. Interpolated Console Log"
+  },
+  "Adv. Interpolated Console Log": {
+    "prefix": "lkklog",
+    "body": [
+      "console.log(`$TM_FILENAME_BASE$1: ${${2:$TM_SELECTED_TEXT}}`);",
+      "$0"
+    ],
+    "description": "Adv. Interpolated Console Log"
+  },
+  "React useEffect": {
+    "prefix": "rueuseEffect",
+    "body": [
+      "useEffect(() => {",
+      "  $0",
+      "}, []);",
+    ],
+    "description": "React useEffect"
+  },
+  "React init component file": {
+    "prefix": "rfci",
+    "body": [
+      "import { FC } from 'react';",
+      "// mui",
+      "import Grid from '@mui/material/Grid';",
+      "",
+      "/** ### $1 */",
+      "const $TM_FILENAME_BASE: FC = () => {",
+      "  return <Grid container direction=\"column\">$2</Grid>;",
+      "};",
+      "",
+      "export default $TM_FILENAME_BASE;",
+      "",
+    ],
+    "description": "React init component file"
+  },
+  "React init component": {
+    "prefix": "rfce",
+    "body": [
+      "/** ### $2 */",
+      "const $1: FC = () => {",
+      "  return <Grid container direction=\"column\">$3</Grid>;",
+      "};",
+      "",
+    ],
+    "description": "React init component file"
+  },
+  "Deprecated comment": {
+    "prefix": "ddc",
+    "body": [
+      "/** @deprecated $1*/$0"
+    ],
+    "description": "Deprecated comment"
+  },
+  "Zod Infer Type": {
+    "prefix": "zzi",
+    "body": [
+      "export type $CLIPBOARD = z.infer<typeof $CLIPBOARD>;"
+    ],
+    "description": "Zod Infer Type"
+  },
+}

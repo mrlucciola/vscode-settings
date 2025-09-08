@@ -1,0 +1,94 @@
+{
+  ///////////////////////////////////////////////////
+  ///////////////////// PRINT ///////////////////////
+  "Simple string print statement": {
+    "prefix": "pls",
+    "body": ["println!(\"$1\");", "$0"],
+    "description": "Common print statement without input"
+  },
+  "Print statement w/ primative input": {
+    "prefix": "plp",
+    "body": ["println!(\"$1{}$2\", $3);$0"],
+    "description": "Basic print statement with input"
+  },
+  "Print interpolated w/ primative input": {
+    "prefix": "pli",
+    "body": ["println!(\"$1{$2}$3\");$0"],
+    "description": "Interpolated print statement with input"
+  },
+  "Print statement w/ non-primative input": {
+    "prefix": "plo",
+    "body": ["println!(\"$1{:?}$2\", $3);$0"],
+    "description": "Basic print statement with non-primative input"
+  },
+  "Print interpolated w/ non-primative input": {
+    "prefix": "ploi",
+    "body": ["println!(\"$1{$2:?}$3\");$0"],
+    "description": "Interpolated print statement with non-primative input"
+  },
+  ///////////////////// PRINT ///////////////////////
+  ///////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////
+  ////////////////////// LET ////////////////////////
+  "Let statement": {
+    "prefix": "llet",
+    "body": ["let ${2:xyz}$3 = $1;$0"],
+    "description": "Let statement"
+  },
+  ////////////////////// LET ////////////////////////
+  ///////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////
+  //////////////////// STRINGS //////////////////////
+  "`New` string": {
+    "prefix": "sstrnew",
+    "body": ["let $2 = String::new();", "$0"],
+    "description": "`New` string"
+  },
+  "`From` string": {
+    "prefix": "sstrfrom",
+    "body": ["let $2 = String::from(\"$1\");$0"],
+    "description": "`From` string"
+  },
+  "R-string": {
+    "prefix": "rstr",
+    "body": ["let ${1:var_name} = r#\"", "    $2", "\"#;", "$0"],
+    "description": "R-string"
+  },
+  //////////////////// STRINGS //////////////////////
+  ///////////////////////////////////////////////////
+
+  ////////////////////////////////////////////////////
+  ////////////////////// STRUCT //////////////////////
+  "Struct with `new`": {
+    "prefix": "structnew",
+    "body": [
+      "struct ${1:struct_name} {$2}",
+      "",
+      "impl ${1:struct_name} {",
+      "    fn new(&self) -> Self {",
+      "        Self {$3}",
+      "    }",
+      "}"
+    ],
+    "description": "Struct with `new`"
+  },
+  ////////////////////// STRUCT //////////////////////
+  ////////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////
+  /////////////////// FUNCTIONS /////////////////////
+  "Fxn statement": {
+    "prefix": "fxn",
+    "body": ["fn $1($2) {$3}"],
+    "description": "Fxn statement"
+  },
+  "Fxn statement w/ return type": {
+    "prefix": "fxnr",
+    "body": ["fn $1($2) -> ${3:()} {$4}"],
+    "description": "Fxn statement w/ return type"
+  }
+  /////////////////// FUNCTIONS /////////////////////
+  ///////////////////////////////////////////////////
+}

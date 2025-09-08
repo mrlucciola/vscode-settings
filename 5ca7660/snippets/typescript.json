@@ -1,0 +1,48 @@
+{
+  // log snippets (in typescriptreact.json)
+  "Basic Interpolated Console Log": {
+    "prefix": "llog",
+    "body": [
+      "console.log(`$1`);",
+      "$0"
+    ],
+    "description": "Basic Interpolated Console Log"
+  },
+  "Var. Interpolated Console Log": {
+    "prefix": "lkvlog",
+    "body": [
+      "console.log(`$1${${2:$TM_SELECTED_TEXT}}`);",
+      "$0"
+    ],
+    "description": "Var. Interpolated Console Log"
+  },
+  "Adv. Interpolated Console Log": {
+    "prefix": "lkklog",
+    "body": [
+      "console.log(`$TM_FILENAME_BASE$1: ${${2:$TM_SELECTED_TEXT}}`);",
+      "$0"
+    ],
+    "description": "Adv. Interpolated Console Log"
+  },
+  "Todo": {
+    "prefix": "todo",
+    "body": [
+      "// @todo ${1:$TM_SELECTED_TEXT}$0",
+    ],
+    "description": "Todo"
+  },
+  "Deprecated comment": {
+    "prefix": "ddc",
+    "body": [
+      "/** @deprecated $1*/$0"
+    ],
+    "description": "Deprecated comment"
+  },
+  "Zod Infer Type": {
+    "prefix": "zzi",
+    "body": [
+      "export type $CLIPBOARD = z.infer<typeof $CLIPBOARD>;"
+    ],
+    "description": "Zod Infer Type"
+  }
+}

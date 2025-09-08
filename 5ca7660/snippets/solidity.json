@@ -1,0 +1,47 @@
+{
+  "Generic Function": {
+    "prefix": "fn",
+    "body": ["function $1($2) $3 {$4}$0"],
+    "description": "Generic Function"
+  },
+  "Public Function": {
+    "prefix": "fnpub",
+    "body": ["function $1($2) public $3 {$4}$0"],
+    "description": "Public Function"
+  },
+  "Private Function": {
+    "prefix": "fnpriv",
+    "body": ["function $1($2) private $3 {$4}$0"],
+    "description": "Private  Function"
+  },
+  "Return Function": {
+    "prefix": "fnr",
+    "body": ["function $1($2) public $3 returns ($4) {$5}$0", "return ;"],
+    "description": "Return Function"
+  },
+  // Returns an array very similar to `return fxn`
+  "Getter Function for Arrays": {
+    "prefix": "fngetterarray",
+    "body": [
+      "function get${1:${TM_SELECTED_TEXT/(.*)/${1:/capitalize}/}}($2) public view $3 returns ($4[] memory) {",
+      "    return ${5:${1/(.*)/${1:/camelcase}/g}};",
+      "}$0"
+    ],
+    "description": "Getter function for arrays"
+  },
+  "Getter Function for Mappings": {
+    "prefix": "fngettermapping",
+    "body": [
+      "function get${1:${TM_SELECTED_TEXT/(.*)/${1:/capitalize}/}}($2) public view $3 returns (${4:type}) {",
+      "    ${4:type} ${5:${1/(.*)/${1:/camelcase}/g}};",
+      "    return ${6:${1/(.*)/${1:/camelcase}/g}};",
+      "}$0"
+    ],
+    "description": "Getter function for arrays"
+  },
+  "Push to Array": {
+    "prefix": "push",
+    "body": ["${1:$TM_SELECTED_TEXT}.push($2);$0"],
+    "description": "Push item to array"
+  }
+}
