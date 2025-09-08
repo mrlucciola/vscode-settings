@@ -1,0 +1,1 @@
+cp ./codium /usr/local/bin/codium
